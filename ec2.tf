@@ -1,9 +1,9 @@
    resource "aws_instance" "web" {
    name                        = "demo"
    ami                         =  "ami-0509f816fdd94dec7"
-   instance_type               = "t2.nano"
+   instance_type               = "t2.large"
    vpc_security_group_ids      = "launch-wizard-1"
-   key_name                    = "docker"
+   key_name                    = "centos"
    subnet_id                   = "subnet-067da5e146926b7ce"
    root_block_device = {
        encrypted   = true
